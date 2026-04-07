@@ -1,0 +1,52 @@
+.btn-primary{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 1rem 2rem;
+    text-align: center;
+    max-width: 10rem;
+    max-height: 4rem;
+    border-radius: var(--radius);
+    box-shadow: -2px 2px 2px var(--color-accent-alt);
+}
+
+.section-decor {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
+
+.section-decor-yellow {
+    display: inline-block;
+    height: 0.3rem;
+    width: 2rem;
+    background-color: var(--color-accent-alt);
+    transform: skewX(45deg);  /* slants the end like / */
+    transform-origin: right top;
+}
+
+.section-decor-red {
+    display: inline-block;
+    height: 0.3rem;
+    width: 1.5rem;
+    background-color: var(--color-accent);
+    transform: skewX(45deg);  /* slants the end like / */
+    transform-origin: right top;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

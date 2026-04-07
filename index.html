@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        
+        <title>Cork Motorz Centre</title>
+        <link rel="stylesheet" href="style/layout.css">
+        <link rel="stylesheet" href="style/components.css">
+        <link rel="stylesheet" href="style/base.css">
+        <link rel="stylesheet" href="style/home.css">
+        <script src="script/nav.js" defer></script>
+    </head>
+    <body>
+        <header class="header container">
+            <a href="#"><img src="assets/logos/trans-logo.png" alt="Cork Motorz Centre Logo"></a>
+
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="overlay" id="overlay"></div>
+
+        <section class="hero-section">
+            <img src="assets/images/hero-bg-1.jpg" alt="Cork Motorz Centre Hero Background Image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1>Welcome to Cork Motorz Centre</h1>
+                <p>Your trusted experts in car servicing, repairs, and maintenance.</p>
+                <a href="tel:0214558870" class="btn-primary">Call Us</a>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="section-decor">
+                    <span class="section-decor-yellow"></span>
+                    <span class="section-decor-red"></span>
+                </div>
+                <h2>Services</h2>
+                <div class="services-grid grid">
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16"><path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/></svg>
+                        <h4>Auto Mechanic</h4>
+                        <p>Expert diagnostics, repairs, and maintenance for all vehicle types.</p>
+                    </div>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M40-280v-160h328L120-636v116H40v-240h40l440 242v-282h200l200 240v280H820q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35q-50 0-85-35t-35-85H40Zm200 60q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm460 0q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17ZM600-560h216L682-720h-82v160Z"/></svg> 
+                        <h4>Recovery Service</h4>
+                        <p>Fast and reliable vehicle recovery when you need it most.</p>
+                    </div>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/></svg>
+                        <h4>Pre-NCT Inspection</h4>
+                        <p>Thorough checks to help your car pass the NCT first time.</p>
+                    </div>
+                    <div class="service-item">
+                        <svg fill="currentColor" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z"></path> <path d="M376.925,135.572c-0.082-0.085-0.152-0.177-0.236-0.261s-0.176-0.154-0.261-0.236 C345.563,104.336,303.002,85.333,256,85.333c-47.115,0-89.77,19.092-120.652,49.96c-0.009,0.009-0.019,0.016-0.028,0.026 s-0.016,0.019-0.026,0.028C104.425,166.23,85.333,208.885,85.333,256s19.092,89.77,49.961,120.652 c0.009,0.009,0.016,0.019,0.026,0.028s0.019,0.016,0.028,0.026c30.882,30.869,73.538,49.961,120.652,49.961 c47.002,0,89.564-19.003,120.428-49.742c0.085-0.082,0.177-0.152,0.261-0.236s0.154-0.176,0.236-0.261 c30.739-30.865,49.742-73.426,49.742-120.428C426.667,208.998,407.664,166.436,376.925,135.572z M360.335,330.165l-46.573-46.573 c0.97-2.028,1.828-4.119,2.584-6.259h65.874C378.957,296.781,371.317,314.744,360.335,330.165z M129.78,277.333h65.874 c0.756,2.14,1.614,4.231,2.584,6.259l-46.573,46.573C140.683,314.744,133.043,296.781,129.78,277.333z M151.665,181.835 l46.573,46.573c-0.97,2.028-1.828,4.119-2.584,6.259H129.78C133.043,215.219,140.683,197.256,151.665,181.835z M271.085,271.085 c-0.013,0.013-0.023,0.027-0.036,0.04c-3.856,3.837-9.172,6.209-15.049,6.209c-5.832,0-11.108-2.34-14.958-6.126 c-0.042-0.042-0.076-0.089-0.119-0.131s-0.089-0.077-0.131-0.119c-3.786-3.849-6.126-9.126-6.126-14.958 s2.34-11.108,6.126-14.958c0.042-0.042,0.089-0.076,0.131-0.119s0.077-0.089,0.119-0.131c3.849-3.786,9.126-6.126,14.958-6.126 c5.876,0,11.192,2.372,15.049,6.209c0.013,0.013,0.023,0.027,0.036,0.04s0.027,0.023,0.04,0.036 c3.837,3.856,6.209,9.172,6.209,15.049s-2.372,11.192-6.209,15.049C271.112,271.061,271.097,271.072,271.085,271.085z M283.592,198.238c-2.028-0.97-4.119-1.828-6.259-2.584V129.78c19.447,3.263,37.41,10.903,52.832,21.885L283.592,198.238z M234.667,195.654c-2.14,0.756-4.231,1.614-6.259,2.584l-46.573-46.573c15.422-10.982,33.385-18.622,52.832-21.885V195.654z M228.408,313.762c2.028,0.97,4.119,1.828,6.259,2.584v65.874c-19.447-3.263-37.41-10.903-52.832-21.885L228.408,313.762z M277.333,316.346c2.14-0.756,4.231-1.614,6.259-2.584l46.573,46.573c-15.422,10.982-33.385,18.622-52.832,21.885V316.346z M316.346,234.667c-0.756-2.14-1.614-4.231-2.584-6.259l46.573-46.573c10.982,15.422,18.622,33.385,21.885,52.832H316.346z"></path> </g> </g> </g> </g></svg>
+                        <h4>Tyres</h4>
+                        <p>Quality tyres, fitting and pressure checks.</p>
+                    </div>
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 5c.83 0 1.5-.67 1.5-1.5 0-1-1.5-2.7-1.5-2.7s-1.5 1.7-1.5 2.7c0 .83.67 1.5 1.5 1.5zm-5 0c.83 0 1.5-.67 1.5-1.5 0-1-1.5-2.7-1.5-2.7s-1.5 1.7-1.5 2.7c0 .83.67 1.5 1.5 1.5zM7 5c.83 0 1.5-.67 1.5-1.5C8.5 2.5 7 .8 7 .8S5.5 2.5 5.5 3.5C5.5 4.33 6.17 5 7 5zm11.92 3.01C18.72 7.42 18.16 7 17.5 7h-11c-.66 0-1.21.42-1.42 1.01L3 14v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 18c-.83 0-1.5-.67-1.5-1.5S5.67 15 6.5 15s1.5.67 1.5 1.5S7.33 18 6.5 18zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 13l1.5-4.5h11L19 13H5z"/></svg>
+                        <h4>Car Wash & Valeting</h4>
+                        <p>Professional cleaning services to keep your car looking its best.</p>
+                    </div>
+                </div>
+                <div class="services-cta">
+                    <a href="services.html" class="btn-primary">View Full List of Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-section">
+            <div class="container">
+                <div class="section-decor">
+                    <span class="section-decor-yellow"></span>
+                    <span class="section-decor-red"></span>
+                </div>
+                <h2>Our Location</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.504170549654!2d-8.475769758650019!3d51.906512074745734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844900d5f4e4395%3A0x6f6c31e3af13a7ef!2sCork%20Motorz%20Centre%20.SMS%20Recovery!5e0!3m2!1sen!2sie!4v1775557026198!5m2!1sen!2sie" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="contact" class="contact-section container">
+            <div class="section-decor">
+                <span class="section-decor-yellow"></span>
+                <span class="section-decor-red"></span>
+            </div>
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <h4>Contact Details:</h4>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
+                    <p>Phone: <a href="tel:0214558870">021 455 88 70</a></p>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16"><path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/></svg>
+                    <p>Mobile: <a href="tel:0852352555">085 455 88 70</a></p>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="currentColor"><rect fill="none" height="24" width="24"/><path d="M12,2L12,2C8.13,2,5,5.13,5,9c0,1.74,0.5,3.37,1.41,4.84c0.95,1.54,2.2,2.86,3.16,4.4c0.47,0.75,0.81,1.45,1.17,2.26 C11,21.05,11.21,22,12,22h0c0.79,0,1-0.95,1.25-1.5c0.37-0.81,0.7-1.51,1.17-2.26c0.96-1.53,2.21-2.85,3.16-4.4 C18.5,12.37,19,10.74,19,9C19,5.13,15.87,2,12,2z M12,11.75c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5 S13.38,11.75,12,11.75z"/></svg>
+                    <p>Address: <a href="https://maps.app.goo.gl/SgTDD4QANHRx9vL56">Back, Watercourse Rd, Cork, T23 TK27</a></p>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <div>
+                        <h4>Working Hours:</h4>
+                        <p>
+                            <span>Monday - Saturday:</span> 9am - 5:30pm <br>
+                            <span>Sunday:</span> Closed
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer container">
+            <div>
+                <img src="assets/logos/trans-logo.png" alt="Cork Motorz Centre Logo">
+                <h2>Cork Motorz Centre</h2>
+                <div class="footer-socials">
+                    <a href="https://facebook.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+                    </a>
+                    <a href="https://instagram.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>                
+                    </a>
+                </div>
+            <div>
+                <h4>Full List of Services:</h4>
+                <a href="services.html">Services</a>
+            </div>
+            <div>
+                <h4>Working Hours:</h4>
+                <p>
+                    <span>Monday:</span> 9am - 5:30pm <br>
+                    <span>Tuesday:</span> 9am - 5:30pm <br>
+                    <span>Wednesday:</span> 9am - 5:30pm <br>
+                    <span>Thursday:</span> 9am - 5:30pm <br>
+                    <span>Friday:</span> 9am - 5:30pm <br>
+                    <span>Saturday:</span> 9am - 5:30pm <br>
+                    <span>Sunday:</span> Closed
+                </p>
+            </div>
+            <div>
+                <h4>Contact Details:</h4>
+                <p>Address: <a href="https://maps.app.goo.gl/SgTDD4QANHRx9vL56">Back, Watercourse Rd, Cork, T23 TK27</a></p>
+                <p>Phone: <a href="tel:0214558870">021 455 88 70</a></p>
+                <p>Mobile: <a href="tel:0852352555">085 455 88 70</a></p>
+            </div>
+            <div class="footer-line"></div>
+            <div>Website Designed by <a>EG Web Dev</a> <br>© 2026 Cork Motorz Centre .SMS Recovery</div>
+        </footer>
+    </body>
+</html>
