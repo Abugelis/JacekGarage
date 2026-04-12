@@ -45,44 +45,257 @@
     padding-bottom: 2rem;
 }
 
-.service-item svg{
-    height: var(--icon-size);
-    width: auto;
+
+/* ---------------------------- Service Cards NEW HOME -------------------- */
+
+/* --------------------- FEATURES SECTION ----------------------- */
+
+/* Section wrapper */
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem 1rem 4rem 1rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.service-item {
+/* Section header wrapper */
+
+.features-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* 
+  TODO (JS enhancement):
+  On desktop, add drag-to-scroll (grab & drag) interaction 
+  for horizontal card scrolling to improve usability.
+*/
+
+/* Outside wrapper for cards/cards container*/
+
+.features-cards-wrapper {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+/* Inner wrapper for cards, for better dimensions control */
+
+.features-cards-inner-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    text-align: center;
+    scrollbar-width: none;
+}
+
+.features-cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card wrapper */
+
+.features-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 23rem;
+    min-width: 15.3rem;
+}
+
+.features-card img {
+    position: absolute;
+    inset: 0;
+    max-height: 23em;
+    width: auto;
+    object-fit: cover;
+    z-index: 1;
+    border: 1px solid gray;
+    border-radius: 2rem;
+}
+
+/* Slight tint for better readability */
+
+.features-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    border-radius: 2rem;
+}
+
+.card-content {
+    position: absolute;
+    color: white;
+    padding: 1rem;
+    z-index: 3;
+    width: 100%;
+    
+}
+
+.card-content h3 {
+    padding-bottom: 2rem;
+    color: var(--color-accent-alt);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 0 solid var(--color-primary);
-    padding: 1rem;
-    border-radius: var(--radius);
-    box-shadow: inset 2px -2px 4px black,
-    inset -2px 2px 4px var(--color-accent-alt),
-    1px 1px 10px black;
 }
 
-.service-item h4 {
+.card-list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.card-list-item p {
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+}
+
+.card-list-item svg {
+    height: 25px;
+    width: auto;
     color: var(--color-accent);
 }
 
-.services-grid {
-    padding-bottom: 4rem;
+/* ------------------- TESTIMONIALS SECTION --------------------- */
+
+.testimonial-section {
+    background-color: black;
+    padding-bottom: 2rem;
+    
 }
 
-.services a {
+.testimonial-section .container {
+    padding-bottom: 0;
+}
+
+.testimonial-section h2 {
+    color: var(--color-secondary);
+}
+
+.testimonials-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.testimonials-wrapper {
+    width: 100%;
+}
+
+.testimonials-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-overlay-left,
+.testimonial-overlay-right {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    z-index: 3;
+}
+
+.testimonial-overlay-left {
+    left: 0;
+    background: linear-gradient(to right, black, transparent);
+}
+
+.testimonial-overlay-right {
+    right: 0;
+    background: linear-gradient(to left, black, transparent);
+}
+
+.testimonials-inner-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    text-align: center;
+    scrollbar-width: none;
+}
+
+.testimonials-card {
+    background-color: rgb(12, 12, 12);
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 18rem;
+    max-width: 18rem;
+    justify-content: center;
+    align-items: center ;
+    padding: 1rem;
     text-align: center;
 }
 
-.services-cta {
-    text-align: center;
+.special-p {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: gray;
+    text-align: right;
+    padding-top: 0;
 }
+
+.features-cards-wrapper,
+.testimonials-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: grab;
+    position: relative;
+    width: 100%;
+}
+
+.features-cards-wrapper.dragging,
+.testimonials-wrapper.dragging {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.features-cards-inner-row,
+.testimonials-inner-row {
+    display: flex;
+    width: max-content;
+}
+
+.features-overlay,
+.testimonial-overlay-left,
+.testimonial-overlay-right {
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------ */
 
 .location-section .container {
     padding-bottom: 1rem;
+    padding-top: 0;
 }
 
 .location-section iframe {

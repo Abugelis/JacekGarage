@@ -18,26 +18,13 @@
         <link rel="stylesheet" href="style/components.css">
         <link rel="stylesheet" href="style/base.css">
         <link rel="stylesheet" href="style/home.css">
-        <script src="script/nav.js" defer></script>
+        <script src="script/scroll-drag.js" defer></script>
     </head>
     <body>
         <header class="header container">
-            <a href="#"><img src="assets/logos/trans-logo.png" alt="Cork Motorz Centre Logo"></a>
-
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="#"><img src="assets/logos/cork-motorz-centre-logo.png" alt="Cork Motorz Centre Logo"></a>
+    
+            <a href="tel:0214558870" class="btn-header">Book an Appointment</a>
         </header>
         <div class="overlay" id="overlay"></div>
 
@@ -57,35 +44,153 @@
                     <span class="section-decor-red"></span>
                 </div>
                 <h2>Services</h2>
-                <div class="services-grid grid">
-                    <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16"><path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/></svg>
-                        <h4>Auto Mechanic</h4>
-                        <p>Expert diagnostics, repairs, and maintenance for all vehicle types.</p>
+
+
+                <div class="features-cards-wrapper">
+                    <div class="features-cards-inner-row">
+                        
+                        <div class="features-card">
+                            <img src="assets/images/card-1.jpg" alt="Mechanic">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Auto Mechanic</h3>
+                                <div class="card-list">
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Servicing & Repairs</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Computer Diagnostic</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Breaks</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Suspension Work</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Pre-NCT Check</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Batteries</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Wipers</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Oil Change</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-card">
+                            <img src="assets/images/card-2.jpg" alt="Recovry Service">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Recovery Service</h3>
+                                <p>Fast and reliable vehicle recovery when you need it most.</p>
+                            </div>
+                        </div>
+                        <div class="features-card">
+                            <img src="assets/images/card-3.jpg" alt="Cleaning">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Cleaning</h3>
+                                <div class="card-list">
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Intake Manifold Cleaning</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>DPF Cataclyst Converter Cleaning</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>EGR Cleaning</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Engine Block & Head Cleaning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-card">
+                            <img src="assets/images/card-4.jpg" alt="Tyres">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Tyres</h3>
+                                <div class="card-list">
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Quality Tyres</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Tyre Fitting</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Pressure Checks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-card">
+                            <img src="assets/images/card-5.jpg" alt="Crash Repair">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Collision Repairs</h3>
+                                <div class="card-list">
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Crash Repair</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Body Work</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Paint Work</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-card">
+                            <img src="assets/images/card-6.jpg" alt="Car Wash">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Car Wash</h3>
+                                <div class="card-list">
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Car Wash</p>
+                                    </div>
+                                    <div class="card-list-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        <p>Valeting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-card">
+                            <img src="assets/images/card-7.jpg" alt="Van Transport">
+                            <div class="features-overlay"></div>
+                            <div class="card-content">
+                                <h3>Van Service</h3>
+                                <p>Hire a Van</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M40-280v-160h328L120-636v116H40v-240h40l440 242v-282h200l200 240v280H820q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35q-50 0-85-35t-35-85H40Zm200 60q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm460 0q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17ZM600-560h216L682-720h-82v160Z"/></svg> 
-                        <h4>Recovery Service</h4>
-                        <p>Fast and reliable vehicle recovery when you need it most.</p>
-                    </div>
-                    <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/></svg>
-                        <h4>Pre-NCT Inspection</h4>
-                        <p>Thorough checks to help your car pass the NCT first time.</p>
-                    </div>
-                    <div class="service-item">
-                        <svg fill="currentColor" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z"></path> <path d="M376.925,135.572c-0.082-0.085-0.152-0.177-0.236-0.261s-0.176-0.154-0.261-0.236 C345.563,104.336,303.002,85.333,256,85.333c-47.115,0-89.77,19.092-120.652,49.96c-0.009,0.009-0.019,0.016-0.028,0.026 s-0.016,0.019-0.026,0.028C104.425,166.23,85.333,208.885,85.333,256s19.092,89.77,49.961,120.652 c0.009,0.009,0.016,0.019,0.026,0.028s0.019,0.016,0.028,0.026c30.882,30.869,73.538,49.961,120.652,49.961 c47.002,0,89.564-19.003,120.428-49.742c0.085-0.082,0.177-0.152,0.261-0.236s0.154-0.176,0.236-0.261 c30.739-30.865,49.742-73.426,49.742-120.428C426.667,208.998,407.664,166.436,376.925,135.572z M360.335,330.165l-46.573-46.573 c0.97-2.028,1.828-4.119,2.584-6.259h65.874C378.957,296.781,371.317,314.744,360.335,330.165z M129.78,277.333h65.874 c0.756,2.14,1.614,4.231,2.584,6.259l-46.573,46.573C140.683,314.744,133.043,296.781,129.78,277.333z M151.665,181.835 l46.573,46.573c-0.97,2.028-1.828,4.119-2.584,6.259H129.78C133.043,215.219,140.683,197.256,151.665,181.835z M271.085,271.085 c-0.013,0.013-0.023,0.027-0.036,0.04c-3.856,3.837-9.172,6.209-15.049,6.209c-5.832,0-11.108-2.34-14.958-6.126 c-0.042-0.042-0.076-0.089-0.119-0.131s-0.089-0.077-0.131-0.119c-3.786-3.849-6.126-9.126-6.126-14.958 s2.34-11.108,6.126-14.958c0.042-0.042,0.089-0.076,0.131-0.119s0.077-0.089,0.119-0.131c3.849-3.786,9.126-6.126,14.958-6.126 c5.876,0,11.192,2.372,15.049,6.209c0.013,0.013,0.023,0.027,0.036,0.04s0.027,0.023,0.04,0.036 c3.837,3.856,6.209,9.172,6.209,15.049s-2.372,11.192-6.209,15.049C271.112,271.061,271.097,271.072,271.085,271.085z M283.592,198.238c-2.028-0.97-4.119-1.828-6.259-2.584V129.78c19.447,3.263,37.41,10.903,52.832,21.885L283.592,198.238z M234.667,195.654c-2.14,0.756-4.231,1.614-6.259,2.584l-46.573-46.573c15.422-10.982,33.385-18.622,52.832-21.885V195.654z M228.408,313.762c2.028,0.97,4.119,1.828,6.259,2.584v65.874c-19.447-3.263-37.41-10.903-52.832-21.885L228.408,313.762z M277.333,316.346c2.14-0.756,4.231-1.614,6.259-2.584l46.573,46.573c-15.422,10.982-33.385,18.622-52.832,21.885V316.346z M316.346,234.667c-0.756-2.14-1.614-4.231-2.584-6.259l46.573-46.573c10.982,15.422,18.622,33.385,21.885,52.832H316.346z"></path> </g> </g> </g> </g></svg>
-                        <h4>Tyres</h4>
-                        <p>Quality tyres, fitting and pressure checks.</p>
-                    </div>
-                    <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 5c.83 0 1.5-.67 1.5-1.5 0-1-1.5-2.7-1.5-2.7s-1.5 1.7-1.5 2.7c0 .83.67 1.5 1.5 1.5zm-5 0c.83 0 1.5-.67 1.5-1.5 0-1-1.5-2.7-1.5-2.7s-1.5 1.7-1.5 2.7c0 .83.67 1.5 1.5 1.5zM7 5c.83 0 1.5-.67 1.5-1.5C8.5 2.5 7 .8 7 .8S5.5 2.5 5.5 3.5C5.5 4.33 6.17 5 7 5zm11.92 3.01C18.72 7.42 18.16 7 17.5 7h-11c-.66 0-1.21.42-1.42 1.01L3 14v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 18c-.83 0-1.5-.67-1.5-1.5S5.67 15 6.5 15s1.5.67 1.5 1.5S7.33 18 6.5 18zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 13l1.5-4.5h11L19 13H5z"/></svg>
-                        <h4>Car Wash & Valeting</h4>
-                        <p>Professional cleaning services to keep your car looking its best.</p>
-                    </div>
-                </div>
-                <div class="services-cta">
-                    <a href="services.html" class="btn-primary">View Full List of Services</a>
                 </div>
             </div>
         </section>
@@ -134,9 +239,77 @@
             </div>
         </section>
 
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="section-decor">
+                    <span class="section-decor-yellow"></span>
+                    <span class="section-decor-red"></span>
+                </div>
+                <h2>What Our Clients Say</h2>
+            </div>
+                <div class="testimonials-section">
+                    <div class="testimonial-overlay-left"></div>
+                    <div class="testimonial-overlay-right"></div>
+                    <div class="testimonials-wrapper">
+                        <div class="testimonials-inner-row">
+                            <div class="testimonials-card">
+                                <p>“Jack was the only lad in Cork who could diagnose my steering knocking issue. Class staff, friendly and knowledgeable.”</p>
+                                <p class="special-p">– Sarraj Alsersawi</p>
+                            </div>
+                            <div class="testimonials-card">
+                                <p>“I know this person from long time he is very help full and kind and he knows his job well doing service car wash at one point and he is not expensive . Easy to access the place he have nice dog.”</p>
+                                <p class="special-p">– AKIF B.</p>
+                            </div>
+                            <div class="testimonials-card">
+                                <p>“Amazing service , honestly can’t recommend enough. Helped me out a lot and at a great price!”</p>
+                                <p class="special-p">– Alex</p>
+                            </div>
+                            <div class="testimonials-card">
+                                <p>“Fantastic friendly service and the car like new after.”</p>
+                                <p class="special-p">– Mark Kelleher</p>
+                            </div>
+                            <div class="testimonials-card">
+                                <p>“Guys did a great job on valeting and washing my car. Very happy with the customer service and end result.”</p>
+                                <p class="special-p">– Aidan K.</p>
+                            </div>
+                            <div class="testimonials-card">
+                                <p>“Fantastic car recovery service. Thank you!”</p>
+                                <p class="special-p">– J. C. S.</p>
+                            </div>
+                            <div class="testimonials-card">
+                                <p>“Very friendly staff and great service”</p>
+                                <p class="special-p">– Youssouf Brahim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="section-decor">
+                    <span class="section-decor-yellow"></span>
+                    <span class="section-decor-red"></span>
+                </div>
+                <h2>About Us</h2>
+                <div class="about-us-content">
+                    <p>
+                        At Cork Motorz Centre, we pride ourselves on delivering reliable, high-quality automotive services to drivers across Cork. Conveniently located on Watercourse Road, we offer a wide range of services including vehicle repairs, diagnostics, car washing and detailing, and breakdown recovery assistance.
+                        <br><br>
+                        Our team is dedicated to keeping your vehicle running smoothly and safely, whether you need routine maintenance, urgent repairs, or fast roadside recovery. We understand how important your car is to your daily life, which is why we focus on providing efficient service, honest advice, and dependable workmanship.
+                        <br><br>
+                        With a strong reputation for friendly service and customer satisfaction, Cork Motorz Centre continues to be a trusted choice for motorists looking for professional and affordable automotive care.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        
         <footer class="footer container">
             <div>
-                <img src="assets/logos/trans-logo.png" alt="Cork Motorz Centre Logo">
+                <img src="assets/logos/cork-motorz-centre-logo.png" alt="Cork Motorz Centre Logo">
                 <h2>Cork Motorz Centre</h2>
                 <div class="footer-socials">
                     <a href="https://facebook.com">
