@@ -62,4 +62,15 @@
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .btn-header {
+        max-width: 16rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .btn-header {
+        max-width: 20rem;
+        max-height: 6rem;
+    }
 }
