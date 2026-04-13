@@ -175,6 +175,20 @@
     color: var(--color-accent);
 }
 
+/* ---------------------- FEATURED ---------------------------*/
+
+.featured-section .container {
+    padding-top: 0;
+}
+
+.featured-content {
+    border: 0 solid var(--color-primary);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 3px var(--color-accent-alt),
+    -1px -1px 3px var(--color-accent);
+}
+
 /* ------------------- TESTIMONIALS SECTION --------------------- */
 
 .testimonial-section {
