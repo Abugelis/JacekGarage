@@ -350,6 +350,21 @@
         margin-top: 2rem;
         width: 40rem;
     }
+
+    .features-card {
+        min-height: 27rem;
+        min-width: 18.3rem;
+    }
+
+    .features-card img {
+        max-height: 27em;
+        width: 18.3rem;
+    }
+
+    .testimonials-card {
+        min-height: 20rem;
+        max-width: 20rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -359,6 +374,16 @@
 
     .location-section iframe {
         height: 600px;
+    }
+
+    .features-card {
+        min-height: 30rem;
+        min-width: 20.3rem;
+    }
+
+    .features-card img {
+        max-height: 30em;
+        width: 20.3rem;
     }
 
 }
@@ -371,6 +396,22 @@
     .hero-content {
         margin-top: 2rem;
         width: 50rem;
+    }
+
+    .features-card {
+        min-height: 35rem;
+        min-width: 23.3rem;
+    }
+
+    .features-card img {
+        max-height: 35em;
+        width: 23.3rem;
+    }
+
+    .location-section iframe {
+        max-width: 82%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
