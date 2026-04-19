@@ -85,6 +85,7 @@
 .features-cards-wrapper {
     overflow-x: scroll;
     max-width: 100%;
+    padding-bottom: 2rem;
 }
 
 /* Inner wrapper for cards, for better dimensions control */
@@ -173,6 +174,14 @@
     height: 25px;
     width: auto;
     color: var(--color-accent);
+}
+
+/* ----------------------- RECOVERY IMAGE -------------------*/
+
+.recovery-image {
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
 }
 
 /* ---------------------- FEATURED ---------------------------*/
@@ -413,6 +422,16 @@
         display: block;
         margin: 0 auto;
     }
+
+    .recovery-image {
+        height: auto;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .footer-ps a {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -427,5 +446,17 @@
     .hero-content {
         margin-top: 8rem;
         width: 80rem;
+    }
+
+    .recovery-image {
+        max-width: 1000px;
+    }
+
+    .footer-ps a {
+        font-size: 1rem;
+    }
+
+    .footer-ps p{
+        font-size: 1.2rem;
     }
 }
