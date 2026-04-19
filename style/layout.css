@@ -176,6 +176,10 @@ header a:focus {
     color: var(--color-accent);
 }
 
+.footer-ps p{
+        color: var(--color-neutral-dark);
+    }
+
 /* ---------------- MOBILE MENU ---------------- */
 @media (max-width: 767px) {
 
